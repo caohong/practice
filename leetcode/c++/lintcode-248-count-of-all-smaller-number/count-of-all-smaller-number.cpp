@@ -17,41 +17,21 @@ void printData(const vector<int> data) {
 class Solution {
 public:
 
-    void swap(int& a, int& b) {
-        int tmp = a;
-        a = b;
-        b = tmp;
-    }
-
-
-    void sort(vector<int> &data) {
-        int size = data.size();
-        for (int i = size; i >= 0; i--) {
-            bool do_swap = false;
-            for (int j = 0; j < i; j ++) {
-                if (data[j] > data[j+1]) {
-                    swap(data[j], data[j+1]);
-                    do_swap = true;
-                }
-            }
-            if (!do_swap) {
-                break;
-            }
-        }
-    }
-
-
     int countOfSmallerNumber(vector<int> &A, int query) {
-        int i = 1;
-        if (A.size() == 0 || A[0] >= query) {
+        int start = 0, end = A.size();
+        if (end == 0 || A[0] >= query) {
             return 0;
         }
-        for (; i < A.size(); i++) {
-            if (A[i] >= query) {
-                break;
+        int mid;
+        while (start < end - 1) {
+            mid = (end + start) >> 1;
+            if (query > A[mid - 1]) {
+                start = mid;
+            } else {
+                end = mid;
             }
         }
-        return i;
+        return start;
     }
 
     /**
@@ -60,7 +40,7 @@ public:
      *          are smaller that the given integer
      */
     vector<int> countOfSmallerNumber(vector<int> &A, vector<int> &queries) {
-        sort(A);
+        sort(A.begin(), A.end());
         vector<int> result;
         for (int i = 0; i < queries.size(); i++) {
             result.push_back(countOfSmallerNumber(A, queries[i]));
@@ -69,16 +49,12 @@ public:
     }
 };
 
-int main() {
-    vector<int> data = {32, 67};
-    vector<int> queries = {65, 50};
+int main(int argc, char* argv[]) {
+    vector<int> data = {1,2,4,6,7,8,10};
+    vector<int> queries = {1, 5, 8};
 
     Solution s;
-    cout<< "sort result:" << endl;
-    s.sort(data);
-    printData(data);
     vector<int> result = s.countOfSmallerNumber(data, queries);
-
     cout<< "count result:" << endl;
     printData(result);
     return 0;
