@@ -9,7 +9,7 @@ Database
 Database has following field:
 
 Field Name | Type | Description |
------|----|----|----|
+-----|----|----|
 vid | num | video id |
 url | string | url of this video |
 desc | string | description of this video |
