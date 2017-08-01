@@ -27,6 +27,7 @@ Learning Material
 =======
 
 1. [Django Girls](https://tutorial.djangogirls.org/)
+2. [Django Tuturials: Write your first view](https://docs.djangoproject.com/en/1.8/intro/tutorial03/)
 
 
 How to run
