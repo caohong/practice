@@ -27,55 +27,29 @@ public:
      */
     
     vector<Interval> insert(vector<Interval> intervals, Interval newInterval) {
-        // write your code here
         vector<Interval> result;
         int i = 0;
-        if (intervals.empty()) {
-            result.push_back(newInterval);
-            return result;
-        }
-        
-        bool overlap = false;
-        bool done_at_first = false;
-        
-        if (newInterval.end < intervals[0].start) {
-            result.push_back(newInterval);
-            done_at_first = true;
-        }
-        
         for (; i < intervals.size(); i++) {
-            if (!done_at_first && (newInterval.start <= intervals[i].end)) {
-                overlap = true;
+            if (intervals[i].start >= newInterval.start) {
                 break;
-            } 
+            }
             result.push_back(intervals[i]);
         }
         
-        if (done_at_first) {
-            return result;
-        }
-        
-        if (!overlap) {
+        if (result.empty() || (newInterval.start > result.back().end)) {
             result.push_back(newInterval);
-            return result;
+        } else {
+            result.back().end = max(newInterval.end, result.back().end);
         }
         
-        Interval tmp(min(newInterval.start, intervals[i].start), 
-                    max(newInterval.end, intervals[i].end));
-        i++;
         for (; i < intervals.size(); i++) {
-            if (intervals[i].start > newInterval.end) {
-                break;
+            if (intervals[i].start <= result.back().end) {
+                result.back().end = max(result.back().end, intervals[i].end);
             } else {
-                tmp.end = max(tmp.end, intervals[i].end);
+                result.push_back(intervals[i]);
             }
         }
-        result.push_back(tmp);
-
         
-        for (; i < intervals.size(); i++) {
-            result.push_back(intervals[i]);
-        }
         return result;
     }
 };
