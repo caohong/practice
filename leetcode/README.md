@@ -10,5 +10,6 @@
 |035|[Reverse Linked List](http://www.lintcode.com/en/problem/reverse-linked-list)|[C++](./c++/lintcode-035-reverse-linked-list)|Easy|
 |039|[Recover Rotated Sorted Array](http://www.lintcode.com/en/problem/recover-rotated-sorted-array/)|[C++](./c++/lintcode-039-recover-rotated-sorted-array)|Easy|
 |041|[Maximum Subarray](http://www.lintcode.com/en/problem/maximum-subarray/)|[C++](./c++/lintcode-041-maximum-subarray)|Easy|
-|044|[Minimum Subarray]|(http://www.lintcode.com/en/problem/minimum-subarray/)|[C++](./c++/lintcode-044-minimum-subarray)|Easy|
-|046|[Majority Number]|(http://www.lintcode.com/en/problem/majority-number/)|[C++](./c++/lintcode-046-majority-number)|Easy|
+|044|[Minimum Subarray](http://www.lintcode.com/en/problem/minimum-subarray/)|[C++](./c++/lintcode-044-minimum-subarray)|Easy|
+|046|[Majority Number](http://www.lintcode.com/en/problem/majority-number/)|[C++](./c++/lintcode-046-majority-number)|Easy|
+|050|[Product of Array Exclude Itself](http://www.lintcode.com/en/problem/product-of-array-exclude-itself/)|[C++](./c++/lintcode-050-product-of-array-exclude-itself)|Easy|
