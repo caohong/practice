@@ -14,3 +14,4 @@
 |046|[Majority Number](http://www.lintcode.com/en/problem/majority-number/)|[C++](./c++/lintcode-046-majority-number)|Easy|
 |050|[Product of Array Exclude Itself](http://www.lintcode.com/en/problec++/lintcode-080-medianm/product-of-array-exclude-itself/)|[C++](./c++/lintcode-050-product-of-array-exclude-itself)|Easy|
 |080|[Median](http://www.lintcode.com/en/problem/median/)|[C++](./c++/lintcode-080-median)|Easy|
+|056|[Two Sum](http://www.lintcode.com/en/problem/two-sum/)|[C++](./c++/lintcode-056-two-sum)|Easy|
