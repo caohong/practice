@@ -15,3 +15,4 @@
 |050|[Product of Array Exclude Itself](http://www.lintcode.com/en/problec++/lintcode-080-medianm/product-of-array-exclude-itself/)|[C++](./c++/lintcode-050-product-of-array-exclude-itself)|Easy|
 |080|[Median](http://www.lintcode.com/en/problem/median/)|[C++](./c++/lintcode-080-median)|Easy|
 |056|[Two Sum](http://www.lintcode.com/en/problem/two-sum/)|[C++](./c++/lintcode-056-two-sum)|Easy|
+|057|[3 Sum](http://www.lintcode.com/en/problem/3sum/)|[C++](./c++/lintcode-057-3Sum)|Medium|
