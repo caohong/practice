@@ -11,42 +11,15 @@ public:
             if (i > 0 && numbers[i] == numbers[i - 1]) {
                 continue;
             }
-            if (numbers[i] > 0) {
-                break;
-            }
-            
-            if (numbers[i] == 0) {
-                if (i < numbers.size() - 2 && (numbers[i + 1] == 0)
-                    && (numbers[i + 2] == 0)) {
-                    // there is three zero continuously
-                    vector<int> tmp(3, 0);
-                    result.push_back(tmp);
-                }
-                break;
-            }
             
             int target = -numbers[i];
             
             int start = i + 1, end = numbers.size() - 1;
-            bool start_updated = false, end_updated = false;
             while (start < end) {
-                if (start_updated) {
-                    if (numbers[start] == numbers[start - 1]) {
-                        start++;
-                        continue;
-                    } else {
-                        start_updated = false;
-                    }
+                if (start > i + 1 && numbers[start - 1] == numbers[start]) {
+                    start ++;
+                    continue;
                 }
-                if (end_updated) {
-                    if (numbers[end] == numbers[end + 1]) {
-                        end--;
-                        continue;
-                    } else {
-                        end_updated = false;
-                    }
-                }
-                
                 int sum = numbers[start] + numbers[end];
                 if (sum == target) {
                     vector<int> tmp;
@@ -55,13 +28,10 @@ public:
                     tmp.push_back(numbers[end]);
                     result.push_back(tmp);
                     start++;
-                    start_updated = true;
                 } else if (sum < target) {
                     start++;
-                    start_updated = true;
                 } else {
                     end--;
-                    end_updated = true;
                 }
             }
 
