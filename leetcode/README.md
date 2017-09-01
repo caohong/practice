@@ -16,3 +16,4 @@
 |080|[Median](http://www.lintcode.com/en/problem/median/)|[C++](./c++/lintcode-080-median)|Easy|
 |056|[Two Sum](http://www.lintcode.com/en/problem/two-sum/)|[C++](./c++/lintcode-056-two-sum)|Easy|
 |057|[3 Sum](http://www.lintcode.com/en/problem/3sum/)|[C++](./c++/lintcode-057-3Sum)|Medium|
+|060|[Search Insert Position](http://www.lintcode.com/en/problem/search-insert-position/)|[C++](./c++/lintcode-060-seartch-insert-pos)|Easy|
