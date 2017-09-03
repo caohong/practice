@@ -11,16 +11,24 @@ public:
      * @return: An integer
      */
     int searchInsert(vector<int> &A, int target) {
-        int i = 0;
-
-        if (A.size() < 1 || target <= A[0]) {
+        if (A.size() < 1) {
             return 0;
         }
-
-        while ((i < A.size()) && (A[i] < target)) {
-            i++;
+        int start = 0, end = A.size() - 1;
+        int size = end - start + 1;
+        while (size > 0) {
+            int mid = start + size / 2;
+            if (target > A[mid]) {
+                start = mid + 1;
+            } else if (target < A[mid]) {
+                end = mid - 1;
+            } else {
+                return mid;
+            }
+            size = end - start + 1;
         }
 
-        return i;
+        return start;
+
     }
 };
