@@ -18,3 +18,4 @@
 |057|[3 Sum](http://www.lintcode.com/en/problem/3sum/)|[C++](./c++/lintcode-057-3Sum)|Medium|
 |060|[Search Insert Position](http://www.lintcode.com/en/problem/search-insert-position/)|[C++](./c++/lintcode-060-search-insert-pos)|Easy|
 |064|[Merge Sorted Array](http://www.lintcode.com/en/problem/merge-sorted-array/)|[C++](./c++/lintcode-064-merge-sorted-array)|Easy|
+|001|[A + B](http://www.lintcode.com/en/problem/a-b-problem/)|[C++](./c++/lintcode-064-merge-sorted-array)|Easy|
