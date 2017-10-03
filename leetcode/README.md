@@ -19,3 +19,4 @@
 |060|[Search Insert Position](http://www.lintcode.com/en/problem/search-insert-position/)|[C++](./c++/lintcode-060-search-insert-pos)|Easy|
 |064|[Merge Sorted Array](http://www.lintcode.com/en/problem/merge-sorted-array/)|[C++](./c++/lintcode-064-merge-sorted-array)|Easy|
 |001|[A + B](http://www.lintcode.com/en/problem/a-b-problem/)|[C++](./c++/lintcode-064-merge-sorted-array)|Easy|
+|066|[Binary Tree Preorder Traversal](http://www.lintcode.com/en/problem/binary-tree-preorder-traversal)|[C++](./c++/lintcode-066-binary-tree-preorder-traversal)|Easy|
