@@ -21,3 +21,4 @@
 |001|[A + B](http://www.lintcode.com/en/problem/a-b-problem/)|[C++](./c++/lintcode-064-merge-sorted-array)|Easy|
 |066|[Binary Tree Preorder Traversal](http://www.lintcode.com/en/problem/binary-tree-preorder-traversal)|[C++](./c++/lintcode-066-binary-tree-preorder-traversal)|Easy|
 |067|[Binary Tree Inorder Traversal](http://www.lintcode.com/en/problem/binary-tree-inorder-traversal/)|[C++](./c++/lintcode-067-binary-tree-inorder-traversal)|Easy|
+|082|[Single Number](http://www.lintcode.com/en/problem/single-number/)|[C++](./c++/lintcode-082-single-number)|Easy|
